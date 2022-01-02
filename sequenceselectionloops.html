@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loops</title>
+</head>
+<body>
+    
+
+<script>
+var mystring = "im really hungry for some";
+console.log(mystring  );
+var myUpperString = mystring.toLocaleUpperCase();
+console.log (myUpperString);
+var fruits =  [ "apple", "carrot", "onion"];
+var reallylocation = mystring.search("really");
+console.log (reallylocation);
+var specialword = mystring.substr(reallylocation, 6);
+specialword = specialword.toLocaleUpperCase();
+var newstring = mystring.replace("really" , specialword);
+console.log (newstring);
+
+for (let i = 0; i< fruits.length; i++){
+let remainder = i % 2;
+
+if (remainder === 0 ){
+var fruitsupper = fruits[i].toUpperCase();
+console.log (`${mystring} ${fruitsupper}`);}
+
+ else {
+    console.log (`${mystring} ${fruits[i]}`);
+}
+
+}
+
+</script>
+
+</body>
+</html>

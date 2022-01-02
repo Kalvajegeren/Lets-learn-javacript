@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom exaples 2</title>
+    <style>
+        .blue {color: blue;}
+    </style>
+</head>
+<body>
+    <h1>Dom examples 2</h1>
+<div id = "special">
+<p class = "someclass">Here is a paragraph</p>
+<p>Here is another paragraph</p>
+<p class = "alv">Here is yet another paragraph</p>
+</div>
+<script>
+
+ /* var myparagraphs =   document.getElementsByTagName("p"); 
+ 
+for (var i = 0; i < myparagraphs.length; i++ ){
+    myparagraphs[i].style.color = "red"
+} */
+
+
+/* var myClass = document.getElementsByClassName ("special");
+
+for (var i = 0; i < myClass.length; i ++){
+myClass [i].style.color = "red"
+
+} */
+
+/* var mytext = document.querySelector(".someclass");
+mytext.style.color = "blue"; */
+
+/* var mytext = document.querySelectorAll("#special p")
+for (var i = 0; i < mytext.length; i ++) {
+    mytext[i].style.color = "red";
+} */
+
+
+
+/* var myDiv = document.getElementById ("special");
+myDiv.innerHTML = "<p> Here is my new paragraph </p>" */
+
+
+
+/* var myFirstParagraph = document.querySelector ("p");
+myFirstParagraph.className = "blue"; */
+
+var myDiv = document.querySelector("div")
+myDiv.removeChild(myDiv.children[1]);
+
+
+</script>
+
+</body>
+</html>
